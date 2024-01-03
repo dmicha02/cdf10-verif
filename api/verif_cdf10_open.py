@@ -34,4 +34,4 @@ class handler(BaseHTTPRequestHandler):
             self.wfile.write(url.encode())
         else:
             self.wfile.write(("Not yet!").encode())
-        return
+        return json({'response':url})
